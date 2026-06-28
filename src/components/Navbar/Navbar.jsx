@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import "./Navbar.css";
+// Importing your logo image from the assets folder
+import logo from "../../assets/logo .jpeg"; 
 
 const NAV_ITEMS = [
   {
@@ -116,15 +118,14 @@ export default function Navbar() {
 
       {/* Main nav */}
       <div className="navbar__main">
-        {/* Logo */}
+        {/* Updated Logo Section */}
         <a href="/" className="navbar__logo">
           <div className="navbar__logo-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-              <circle cx="24" cy="24" r="22" stroke="#C9A84C" strokeWidth="2"/>
-              <path d="M12 30L24 10L36 30" stroke="#C9A84C" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M16 25h16" stroke="#C9A84C" strokeWidth="2" strokeLinecap="round"/>
-              <circle cx="24" cy="10" r="3" fill="#C9A84C"/>
-            </svg>
+            <img 
+              src={logo} 
+              alt="Oneness Aviation Logo" 
+              style={{ width: '48px', height: '48px', objectFit: 'contain' }} 
+            />
           </div>
           <div className="navbar__logo-text">
             <span className="navbar__logo-name">ONENESS</span>

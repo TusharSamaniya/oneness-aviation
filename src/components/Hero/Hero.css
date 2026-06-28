@@ -1,0 +1,102 @@
+/* ============================================
+   HERO SECTION — Enhanced Search Box
+   ============================================ */
+
+.hero {
+  height: 85vh;
+  position: relative;
+  background: url('../../assets/jetimage.webp') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 80px;
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 60px; /* Increased gap before the search box */
+  color: #f0ebe0;
+}
+
+/* --- SEARCH BOX (Larger & Professional) --- */
+.hero__search-box {
+  background: #ffffff;
+  padding: 40px; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero__tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.tab {
+  background: #999;
+  color: white;
+  border: none;
+  padding: 12px 25px; /* Bigger buttons */
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab.active {
+  background: #C9A84C;
+}
+
+/* Input Fields Grid */
+.hero__search-inputs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.input-field {
+  padding: 18px; /* Taller fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-btn {
+  background: #C9A84C;
+  color: white;
+  border: none;
+  padding: 18px; /* Taller button */
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Spans full width */
+  margin-top: 5px;
+}
