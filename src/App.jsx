@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 // 1. ADD THIS LINE: Import the new component you just created
 import ServicesOverview from "./components/ServicesOverview"; 
+import HowItWorks from "./components/HowItWorks";
 
 export default function App() {
   return (
@@ -12,8 +13,7 @@ export default function App() {
         <Hero />
         {/* 2. ADD THIS LINE: Place the component right below the Hero */}
         <ServicesOverview />
-        
-        {/* Future sections: Fleet showcase, Why Oneness, Testimonials, etc. */}
+        <HowItWorks /> {/* Add this line */}
       </main>
     </>
   );
